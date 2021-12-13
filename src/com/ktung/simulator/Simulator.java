@@ -16,7 +16,7 @@ public class Simulator {
   }
 
   public void showOdds() {
-    bets.forEach(bet -> System.out.println(bet.getOdds()));
+    bets.forEach(bet -> System.out.println(bet.getOddsMap()));
   }
 
   public int run(int nbPlay) {
