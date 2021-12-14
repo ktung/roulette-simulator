@@ -15,6 +15,7 @@ public class Street extends Bet {
   private void validateBet() {
     if (winningNumbers.length != 3) {
       invalidBet();
+      return;
     }
 
     Arrays.sort(winningNumbers);

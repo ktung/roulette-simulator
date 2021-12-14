@@ -15,6 +15,7 @@ public class Line extends Bet {
   private void validateBet() {
     if (winningNumbers.length != 6) {
       invalidBet();
+      return;
     }
 
     Arrays.sort(winningNumbers);

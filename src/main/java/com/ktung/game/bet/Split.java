@@ -13,6 +13,7 @@ public class Split extends Bet {
   private void validateBet() {
     if (winningNumbers.length != 2) {
       invalidBet();
+      return;
     }
 
     int difference = Math.abs(winningNumbers[0]-winningNumbers[1]);
