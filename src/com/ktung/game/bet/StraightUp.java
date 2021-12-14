@@ -1,4 +1,6 @@
-package com.ktung.game;
+package com.ktung.game.bet;
+
+import com.ktung.game.bet.abs.Bet;
 
 public class StraightUp extends Bet {
   public StraightUp(int bet) {

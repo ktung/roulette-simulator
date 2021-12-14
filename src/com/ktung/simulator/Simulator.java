@@ -1,6 +1,6 @@
 package com.ktung.simulator;
 
-import com.ktung.game.Bet;
+import com.ktung.game.bet.abs.Bet;
 import com.ktung.game.Constants;
 
 import java.util.ArrayList;

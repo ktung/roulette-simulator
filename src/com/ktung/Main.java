@@ -1,7 +1,7 @@
 package com.ktung;
 
-import com.ktung.game.Black;
-import com.ktung.game.Red;
+import com.ktung.game.bet.Black;
+import com.ktung.game.bet.Red;
 import com.ktung.simulator.Simulator;
 
 public class Main {

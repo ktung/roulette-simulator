@@ -1,4 +1,6 @@
-package com.ktung.game;
+package com.ktung.game.bet.abs;
+
+import com.ktung.game.Constants;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -13,7 +15,7 @@ public abstract class Bet {
   protected int bet;
 
   public double getOdds() {
-    return (double) winningNumbers.length /Constants.NB_POSSIBILITIES;
+    return (double) winningNumbers.length / Constants.NB_POSSIBILITIES;
   }
 
   protected int calculatePossibleWin() {

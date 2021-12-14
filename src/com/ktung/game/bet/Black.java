@@ -1,4 +1,6 @@
-package com.ktung.game;
+package com.ktung.game.bet;
+
+import com.ktung.game.bet.abs.Bet;
 
 public class Black extends Bet {
   public Black(int bet) {
