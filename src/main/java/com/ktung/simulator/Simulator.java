@@ -26,8 +26,8 @@ public class Simulator {
     int totalBet = sumBet*nbPlay;
     int totalWon = 0;
 
+    Random random = new Random();
     for (int i = 0; i < nbPlay; i++) {
-      Random random = new Random();
       int result = random.nextInt(Constants.NB_POSSIBILITIES);
 
       int won = bets.stream().map(bet -> bet.calculateWin(result)).reduce(0, Integer::sum);
