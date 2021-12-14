@@ -1,5 +1,9 @@
-- [ ] Column bet
+- [x] Straight up bet
+- [x] Red/black bet
+- [x] Low/High bet
+- [x] Odd/Even bet
 - [x] Dozen bet
+- [x] Column bet
 - [ ] Corner bet (4number 8:1)
 - [ ] Line bet (6number 5:1)
 - [ ] Split bet (2number 17:1)
