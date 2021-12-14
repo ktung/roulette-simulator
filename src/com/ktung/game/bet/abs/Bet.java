@@ -41,4 +41,11 @@ public abstract class Bet {
 
     return 0;
   }
+
+  protected void invalidBet() {
+    System.out.printf("Invalid %s bet%n", this.getClass().getSimpleName());
+    this.winningNumbers = new int[]{};
+    this.payout = 0;
+    this.bet = 0;
+  }
 }

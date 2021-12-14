@@ -4,7 +4,7 @@
 - [x] Odd/Even bet
 - [x] Dozen bet
 - [x] Column bet
+- [x] Split bet (2number 17:1)
+- [ ] Street bet (3number 11:1)
 - [ ] Corner bet (4number 8:1)
 - [ ] Line bet (6number 5:1)
-- [ ] Split bet (2number 17:1)
-- [ ] Street bet (3number 11:1)
