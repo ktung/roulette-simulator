@@ -1,0 +1,3 @@
+- https://fr.wikipedia.org/wiki/Roulette_(jeu_de_hasard)
+- https://www.playsmart.ca/table-games/roulette/how-to-play/european-roulette/
+- https://roulette77canada.org/roulette-europ%C3%A9enne
