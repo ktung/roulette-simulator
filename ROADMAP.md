@@ -7,4 +7,4 @@
 - [x] Split bet (2number 17:1)
 - [x] Street bet (3number 11:1)
 - [ ] Corner bet (4number 8:1)
-- [ ] Line bet (6number 5:1)
+- [x] Line bet (6number 5:1)

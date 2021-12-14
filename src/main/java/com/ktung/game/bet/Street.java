@@ -18,31 +18,26 @@ public class Street extends Bet {
     }
 
     Arrays.sort(winningNumbers);
-    for (int i = 0; i < winningNumbers.length - 2; i++) {
+    for (int i = 0; i < winningNumbers.length - 1; i++) {
       if (winningNumbers[i+1] - winningNumbers[i] != 1) {
         invalidBet();
         return;
       }
     }
 
-    int nbWrongColor = 0;
-//    if (Arrays.stream(Red.redNumbers).anyMatch(n -> n == winningNumbers[0])) {
-//      for (int i = 1; i < winningNumbers.length-1; i++) {
-//        if (Arrays.stream(Black.blackNumbers).anyMatch(n -> n == winningNumbers[i])) {
-//          ++nbWrongColor;
-//        }
-//      }
-//    } else if (Arrays.stream(Black.blackNumbers).anyMatch(n -> n == winningNumbers[0])) {
-//      for (int i = 1; i < winningNumbers.length - 1; i++) {
-//        if (Arrays.stream(Red.redNumbers).anyMatch(n -> n == winningNumbers[i])) {
-//          ++nbWrongColor;
-//        }
-//      }
-//    }
-//
-//    if (nbWrongColor == 2) {
-//      invalidBet();
-//    }
+    if (Arrays.stream(FirstColumn.winningNums).noneMatch(n -> n == winningNumbers[0])) {
+      invalidBet();
+      return;
+    }
+
+    if (Arrays.stream(SecondColumn.winningNums).noneMatch(n -> n == winningNumbers[1])) {
+      invalidBet();
+      return;
+    }
+
+    if (Arrays.stream(ThirdColumn.winningNums).noneMatch(n -> n == winningNumbers[2])) {
+      invalidBet();
+    }
   }
 
 }
