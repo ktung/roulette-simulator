@@ -20,6 +20,8 @@ public class Simulator {
   }
 
   public int run(int nbPlay) {
+    List<String> outputs = new ArrayList<>();
+
     int sumBet = bets.stream().map(Bet::getBet).reduce(0, Integer::sum);
     int totalBet = sumBet*nbPlay;
     int totalWon = 0;
@@ -30,10 +32,11 @@ public class Simulator {
 
       int won = bets.stream().map(bet -> bet.calculateWin(result)).reduce(0, Integer::sum);
       totalWon += won;
-      System.out.printf("Result : %d, Bet : %d, Won : %d%n", result, sumBet, won);
+      outputs.add(String.format("Result : %d, Bet : %d, Won : %d%n", result, sumBet, won));
     }
     int pnl = totalWon-totalBet;
-    System.out.printf("Bet : %d, Won : %d => P/L %d%n", totalBet, totalWon, pnl);
+    outputs.add(String.format("Bet : %d, Won : %d => P/L %d%n", totalBet, totalWon, pnl));
+    System.out.println(outputs);
 
     return pnl;
   }
