@@ -14,7 +14,7 @@ public class Main {
         int miseTotale = 0;
 
         int balance = initialBalance;
-        int nbIteration = 10;
+        int nbIteration = 1;
         int totalWin = 0;
         int pnlPerRound = 0;
         for (int i = 0; i < nbIteration; i++) {
